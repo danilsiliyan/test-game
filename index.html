@@ -5,27 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	
-<!-- Yandex.RTB -->
-<script>window.yaContextCb=window.yaContextCb||[]</script>
-<script src="https://yandex.ru/ads/system/context.js" async></script>
+
 
 <script>
 	const pasa = localStorage.getItem("pasa");
 
 if (pasa === "1") {
-  const headElement = document.querySelector("head");
   const bodyElement = document.querySelector("body");
 
-  // Закомментировать строки в head
-  for (let i = 8; i <= 10; i++) {
-    const comment = document.createComment("// Строка " + i + " закоментирована");
-    headElement.appendChild(comment);
-  }
-
   // Закомментировать строки в body
-  for (let i = 46; i <= 48; i++) {
-    const comment = document.createComment("// Строка " + i + " закоментирована");
-    bodyElement.appendChild(comment);
+  const terElements = bodyElement.querySelectorAll(".ter");
+  for (const terElement of terElements) {
+    const comment = document.createComment("// Эта строка закоментирована");
+    terElement.appendChild(comment);
   }
 }
 </script>	
@@ -43,9 +35,9 @@ if (pasa === "1") {
 
 <div></div>
 	<a href="Slogi/indexSl.html"><p>играть</p></a>
-	<div><p>Привет</p></div>
-	<div><p>Привет</p></div>
-	<div><p>Привет</p></div>
+	<div class="ter"><p>Привет</p></div>
+	<div class="ter"><p>Привет</p></div>
+	
 	
 </body>
 </html>
