@@ -1,0 +1,10 @@
+{
+	"name": "Avtomatiza Sh",
+	"short_name": "Avtomatiza Sh",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}
