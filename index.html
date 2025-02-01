@@ -5,21 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>лого-игры</title>
 
-  <script>
+	<script>
     document.addEventListener("DOMContentLoaded", function() {
       const testData = {
           data: true,         // Или false для проверки другого сценария
-          fromState: test,
-          id: 1234,
+          fromState: "test",
+          id: "12345",
           timestamp: Date.now(),
-          to: test,
-          version: 1.0
+          to: "test",
+          version: "1.0"
       };
 
       localStorage.setItem("shouldRequestUser", JSON.stringify(testData));
       console.log('Ключ "shouldRequestUser" установлен в localStorage:', testData);
     });
   </script>
+
+ 
 
  <style>
 		
@@ -34,7 +36,7 @@
 
 <div></div>
 	
-	<a href="test/index.html"><p>Играть</p></a>
+	<a href="test_1/index.html"><p>Играть</p></a>
 
 	
 	
