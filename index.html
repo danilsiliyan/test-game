@@ -5,24 +5,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>лого-игры</title>
 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Тестовый сайт</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const testData = {
+          data: true,         // Или false для проверки другого сценария
+          fromState: test,
+          id: 1234,
+          timestamp: Date.now(),
+          to: test,
+          version: 1.0
+      };
 
-	
+      localStorage.setItem("shouldRequestUser", JSON.stringify(testData));
+      console.log('Ключ "shouldRequestUser" установлен в localStorage:', testData);
+    });
+  </script>
+</head>
+<body>
+  <!-- Содержимое тестового сайта -->
+</body>
+</html>
 
-
-<script>
-	const pasa = localStorage.getItem("pasa");
-
-if (pasa === "1") {
-  const bodyElement = document.querySelector("body");
-
-  // Закомментировать строки в body
-  const terElements = bodyElement.querySelectorAll(".ter");
-  for (const terElement of terElements) {
-    const comment = document.createComment("// Эта строка закоментирована");
-    terElement.appendChild(comment);
-  }
-}
-</script>	
+		
 	
 	<style>
 		
